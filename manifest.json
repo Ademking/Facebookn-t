@@ -1,0 +1,32 @@
+{
+	"manifest_version" : 2,
+	"name": "Facebook'nt",
+	"description": "No More Facebook For Today",
+	"version": "1.0",
+	"content_scripts": [
+		{
+			"matches" : [
+				"<all_urls>"
+			],
+			"js": ["jquery.js","content.js"]
+		}
+	],
+	"permissions": [
+		"*://*.facebook.com/*",
+		"storage",
+		"tabs",
+		"activeTab"
+	  ],
+  "background": {
+    "scripts": ["jquery.js","background.js"]
+  },
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "Facebook'nt", 
+		"default_popup": "popup.html" 
+	},
+	 "icons": { "16": "icons/16.png",
+             "48": "icons/48.png",
+            "128": "icons/128.png" }
+
+}

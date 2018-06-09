@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Facebookn't</title>
+    <link href="bootstrap-theme.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="includes/css/fontawesome-all.min.css">
+    
+    <script src="jquery.js"></script>
+    <script src="popup.js"></script>
+    <script src="sweetalert.js"></script>
+    <style>
+	
+      body {  margin: 0 ; padding : 0 ; width: 490px; height: 10px; }
+      button {width: 128px; }
+      .red {
+        color: red !important;
+      }
+      .blue {
+        color: blue !important;
+      }
+
+      #info {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+      }
+      #info a {
+        position: relative;
+        top: -6px;
+        right: 4px;
+      }
+      a {
+        text-decoration: none;
+        padding-bottom: 2px;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        transition: border-color 0.2s; 
+        }
+
+      a:hover {
+          border-color: transparent; 
+        }
+
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <h1><i class="fab fa-facebook"></i><br>Facebookn't</h1>
+        <div id="info">
+            <a href="https://about.me/AdemKouki" target="_blank" id="about">About Me</a>
+            <img height="20px" width="20px" src="info.svg" alt="" srcset="">
+        </div>
+      
+
+        <p>Enough Facebook For Today ❌ ! Be Productive ❤️💡</p>
+      
+      </div>
+    </header>
+    <section class="alpha">
+        <div class="container">
+          <div style="display: flex">
+              <h4><strong>Status :  </strong><span id="status_text"></span></h4>
+              <button id="btn-toggle" class="btn" style="margin-left: auto;"></button>
+              
+              <p id="my_stat" class=""></p>
+          </div>
+            
+
+            </div>
+
+    </section>
+
+  </body>
+</html>
